@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta
-     name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cricket</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1> Bat Ball Stump</h1>
-    <button onclick="
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket - guess</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Bat Ball Stump</h1>
+    
+    <button
+      onclick="
    //const userChoiceMsg('You Have Choosen Bat');
     let randomNumber= Math.random() * 3;
     let computerChoice;
@@ -37,21 +38,13 @@
     else if(computerChoice==='Stump'){
        resultMsg='Computer Won'
     }
- alert(`You Have Choosen Bat .Computer Choice is ${computerChoice} and ${resultMsg}`); "> Bat</button>
+ alert(`You Have Choosen Bat .Computer Choice is ${computerChoice} and ${resultMsg}`); "
+    >
+      Bat
+    </button>
 
+    <button class="button">Ball</button>
 
-<button class="button"   >Ball</button>
-
-
-
-
-
-
-
-
-
-
-    <button class="button"> Stump</button>
-    
-</body>
+    <button class="button">Stump</button>
+  </body>
 </html>
