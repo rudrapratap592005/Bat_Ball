@@ -6,30 +6,33 @@
     <title>Cricket </title>
     <link rel="stylesheet" href="./style.css" />
    <body>
+    <img src="./images/cricket (1).png" alt=""  width="150px">
     <h1>Bat Ball Stump</h1>
-    
-                <button
-                      onclick="   
-                              let computerChoice=  generateComputerChoice();
-   
-  
-                               let resultMsg =  getResult('Bat' , computerChoice);
-                               showResult('Bat' , computerChoice , resultMsg)  ">  Bat </button >
+    <div class="buttons-container">
 
-                                    <button onclick="
-                            computerChoice= generateComputerChoice();
-                           resultMsg =  getResult('Ball' , computerChoice);;
-                           showResult('Ball' , computerChoice , resultMsg)"
-                                     
-                                      >Ball</button>
+      <button
+            onclick="   
+                    let computerChoice=  generateComputerChoice();
 
-                               <button onclick=" 
-         
-                      computerChoice= generateComputerChoice();
-                         resultMsg  =   getResult('Stump' , computerChoice); 
-                         showResult('Stump' , computerChoice , resultMsg)"
 
-                   >Stump</button>
+                     let resultMsg =  getResult('Bat' , computerChoice);
+                     showResult('Bat' , computerChoice , resultMsg)  "><img src="./images/cricket-bat.png" alt="" width="25px">  Bat </button >
+
+                          <button onclick="
+                  computerChoice= generateComputerChoice();
+                 resultMsg =  getResult('Ball' , computerChoice);;
+                 showResult('Ball' , computerChoice , resultMsg)"
+                           
+                            > <img src="./images/cricket-ball.png" alt="" width="25px"> Ball</button>
+
+                     <button onclick=" 
+
+            computerChoice= generateComputerChoice();
+               resultMsg  =   getResult('Stump' , computerChoice); 
+               showResult('Stump' , computerChoice , resultMsg)"
+
+         ><img src="./images/cricket.png" alt="" width="25px">Stump</button>
+    </div>
                     <script src="first.js"> </script>
                   </body>
                    </html>

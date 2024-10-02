@@ -1,4 +1,27 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+  background-color: aliceblue;
+}
 
-body{
-    text-align: center;
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons-container button {
+  background-color: aqua;
+  border: none;
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.buttons-container button:hover {
+  background-color: red;
+  color: white;
 }
