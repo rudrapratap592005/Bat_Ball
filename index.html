@@ -3,48 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cricket - guess</title>
+    <title>Cricket </title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+   <body>
     <h1>Bat Ball Stump</h1>
     
-    <button
-      onclick="
-   //const userChoiceMsg('You Have Choosen Bat');
-    let randomNumber= Math.random() * 3;
-    let computerChoice;
-    if(randomNumber>0 && randomNumber<=1 ){
-       computerChoice='Bat'
-//console.log('Computer Choice is Bat')
-    }
-    else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Ball'
-       // console.log('Computer Choice is Ball')
-    } 
-    else{
-         computerChoice='Stump' 
-       // console.log('Computer Choice is Stump')
-    }
-  // const computerChoiceMsg(``);
-   let resultMsg;
-    if(computerChoice === 'Ball'){
-   resultMsg='User Won'
-    }
-    else if(computerChoice==='Bat'){
-      resultMsg ='tie'
+                <button
+                      onclick="   
+                              let computerChoice=  generateComputerChoice();
+   
+  
+                               let resultMsg =  getResult('Bat' , computerChoice);
+                               showResult('Bat' , computerChoice , resultMsg)  ">  Bat </button >
 
-    }
-    else if(computerChoice==='Stump'){
-       resultMsg='Computer Won'
-    }
- alert(`You Have Choosen Bat .Computer Choice is ${computerChoice} and ${resultMsg}`); "
-    >
-      Bat
-    </button>
+                                    <button onclick="
+                            computerChoice= generateComputerChoice();
+                           resultMsg =  getResult('Ball' , computerChoice);;
+                           showResult('Ball' , computerChoice , resultMsg)"
+                                     
+                                      >Ball</button>
 
-    <button class="button">Ball</button>
+                               <button onclick=" 
+         
+                      computerChoice= generateComputerChoice();
+                         resultMsg  =   getResult('Stump' , computerChoice); 
+                         showResult('Stump' , computerChoice , resultMsg)"
 
-    <button class="button">Stump</button>
-  </body>
-</html>
+                   >Stump</button>
+                    <script src="first.js"> </script>
+                  </body>
+                   </html>
+
